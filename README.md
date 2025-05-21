@@ -16,12 +16,6 @@ This is the frontend application for the Notebook app, built with React + Vite a
 - npm or yarn package manager
 - Backend server running (see backend README)
 
-## Installation
-
-1. Install dependencies:
-```bash
-npm 
----
-
 ## Live Deployment
-Vercel Deployment URL: https://notebook-frontend-murex.vercel.app
+
+- Vercel Deployment URL: https://notebook-frontend-murex.vercel.app
