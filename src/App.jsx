@@ -1,12 +1,17 @@
-import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Header from './components/Header';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import Register from './pages/Register';
+import { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
-  const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')));
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
 
   return (
     <Router>
@@ -22,11 +27,15 @@ function App() {
         />
         <Route
           path="/login"
-          element={user ? <Navigate to="/notes" /> : <Login setUser={setUser} />}
+          element={
+            user ? <Navigate to="/notes" /> : <Login setUser={setUser} />
+          }
         />
         <Route
           path="/register"
-          element={user ? <Navigate to="/notes" /> : <Register setUser={setUser} />}
+          element={
+            user ? <Navigate to="/notes" /> : <Register setUser={setUser} />
+          }
         />
       </Routes>
     </Router>
