@@ -22,3 +22,6 @@ This is the frontend application for the Notebook app, built with React + Vite a
 ```bash
 npm 
 ---
+
+## Live Deployment
+Vercel Deployment URL: https://notebook-frontend-murex.vercel.app
